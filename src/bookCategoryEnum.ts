@@ -25,4 +25,12 @@ export enum BookCategory {
 
 export function getBookCategory(category) {
   // 在此實現函式
+  switch(category){
+    case BookCategory.Novel:
+      return 'Book category: Novel';
+    case BookCategory.Science:
+      return 'Book category: Science';
+    case BookCategory.Education:
+      return 'Book category: Education';
+  }
 }
